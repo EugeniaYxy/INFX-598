@@ -1,0 +1,52 @@
+/*create a set of rules*/
+/* Element selector: "body"*/
+body {
+    /* If there's a space btw two words, then you have to quote them 'Helvetica Neue'*/
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    /* rgb / rgba / #letters */
+    background-color: rgba(165, 217, 214,0.8);
+    /* for font color*/
+    color: #BF4B5B;
+    font-weight: 300;
+    margin: 0;
+}
+
+header {
+    /* ".." = go up one directory
+        linear-gradient(range of rgba)
+        to right / left: decide where does the gradient start*/   
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/cat.jpg);
+    /* no repeat for the background img */
+    background-repeat: no-repeat;
+    /* sover and stretch as much as needed */
+    background-size: cover;
+    /* If the cover img only takes half of the pic as you stretch,
+         you can always use 'center' to place it in the center */
+    background-position: center; 
+    min-height: 400px;
+    color: white;
+}
+
+header h1 {
+    /* margin: how we seperate one element from another element 
+        = the thing that is fill in the back is the h1 element */
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+header p {
+    padding-left: 0;
+    font-size: 150%;
+}
+
+img {
+    max-height: 200px;
+}
+
+p {
+    line-height: 1.5;
+    /* em: height of the character */
+    padding-left: 1em;
+}
